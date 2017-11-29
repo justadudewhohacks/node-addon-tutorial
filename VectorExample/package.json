@@ -1,5 +1,5 @@
 {
-  "name": "node-addon-tutorial",
+  "name": "node-addon-tutorial-vector-example",
   "version": "1.0.0",
   "main": "bindings.js",
   "scripts": {

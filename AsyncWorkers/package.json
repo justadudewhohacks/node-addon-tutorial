@@ -1,0 +1,32 @@
+{
+  "name": "node-addon-tutorial-async-workers",
+  "version": "1.0.0",
+  "main": "bindings.js",
+  "scripts": {
+    "build": "node-gyp build",
+    "install": "node-gyp rebuild",
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "nan": "^2.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justadudewhohacks/node-addon-tutorial.git"
+  },
+  "keywords": [
+    "native",
+    "cpp",
+    "addon",
+    "tutorial",
+    "nan",
+    "async",
+    "workers"
+  ],
+  "author": "justadudewhohacks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justadudewhohacks/node-addon-tutorial/issues"
+  },
+  "homepage": "https://github.com/justadudewhohacks/node-addon-tutorial#readme"
+}
