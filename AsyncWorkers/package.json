@@ -8,7 +8,7 @@
     "start": "node ./index.js"
   },
   "dependencies": {
-    "nan": "^2.7.0"
+    "nan": "^2.10.0"
   },
   "repository": {
     "type": "git",

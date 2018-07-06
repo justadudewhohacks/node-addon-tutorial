@@ -57,7 +57,7 @@ public:
       Nan::Null(), // no error occured
       Nan::New(workerId).ToLocalChecked()
     };
-		callback->Call(2, argv);
+    Nan::Call(callback->GetFunction(), Nan::GetCurrentContext()->Global(), 2, argv);
 	}
 
 	void HandleErrorCallback() {
@@ -66,8 +66,8 @@ public:
       Nan::New(this->ErrorMessage()).ToLocalChecked(), // return error message
       Nan::Null()
     };
-		callback->Call(2, argv);
-	}
+    Nan::Call(callback->GetFunction(), Nan::GetCurrentContext()->Global(), 2, argv);
+  }
 };
 
 NAN_METHOD(MyAsyncBinding::DoAsyncStuff) {
